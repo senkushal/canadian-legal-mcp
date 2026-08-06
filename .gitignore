@@ -7,3 +7,4 @@ dist/
 *.log
 mcp-publisher
 .mcpregistry_*
+.env.local
