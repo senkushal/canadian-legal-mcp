@@ -20,9 +20,9 @@ const require = createRequire(import.meta.url);
 const { version } = require("../package.json");
 
 const server = new McpServer({
-	name: "CanLII MCP",
+	name: "Optillium Canadian Legal Research",
 	version,
-	description: "Local MCP server for Canadian legal research via the CanLII API. Always include CanLII URLs in responses so the user can verify sources directly."
+	description: "Canadian legal research MCP server by Optillium using the CanLII API. Always include source URLs so users can verify legal information directly."
 });
 
 // Input validation schemas for path segments
