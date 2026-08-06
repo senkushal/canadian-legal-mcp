@@ -1,23 +1,23 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.mohammadfarooqi/canlii",
-  "description": "Search Canadian case law, browse legislation, and check citations via the CanLII API.",
+  "name": "ca.optillium/canadian-legal-research",
+  "description": "Canadian legal research MCP server using authorized Canadian legal information sources.",
   "repository": {
-    "url": "https://github.com/mohammadfarooqi/canlii-mcp",
+    "url": "https://github.com/senkushal/canadian-legal-mcp",
     "source": "github"
   },
-  "version": "1.1.4",
+  "version": "0.1.0",
   "packages": [
     {
       "registryType": "npm",
-      "identifier": "canlii-mcp",
-      "version": "1.1.4",
+      "identifier": "@optillium/canadian-legal-mcp",
+      "version": "0.1.0",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
-          "description": "Your CanLII API key (request free at canlii.org/en/feedback/feedback.html)",
+          "description": "CanLII API key",
           "isRequired": true,
           "format": "string",
           "isSecret": true,
