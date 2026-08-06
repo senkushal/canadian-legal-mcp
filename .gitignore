@@ -8,3 +8,6 @@ dist/
 mcp-publisher
 .mcpregistry_*
 .env.local
+
+# Allow the safe environment template
+!.env.example
