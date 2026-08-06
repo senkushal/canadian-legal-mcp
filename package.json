@@ -1,8 +1,8 @@
 {
-  "name": "canlii-mcp",
-  "version": "1.1.4",
-  "mcpName": "io.github.mohammadfarooqi/canlii",
-  "description": "Local stdio MCP server for searching Canadian legal information via the CanLII API",
+  "name": "@optillium/canadian-legal-mcp",
+  "version": "0.1.0",
+  "mcpName": "ca.optillium/canadian-legal-research",
+  "description": "Canadian legal research MCP server using authorized Canadian legal information sources.",
   "type": "module",
   "bin": {
     "canlii-mcp": "dist/index.js"
@@ -16,11 +16,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "test": "npm run build && node --test dist/test.js",
-    "release:patch": "npm version patch && git push origin main --tags && gh release create v$(node -p \"require('./package.json').version\") --generate-notes -R mohammadfarooqi/canlii-mcp",
-    "release:minor": "npm version minor && git push origin main --tags && gh release create v$(node -p \"require('./package.json').version\") --generate-notes -R mohammadfarooqi/canlii-mcp",
-    "release:major": "npm version major && git push origin main --tags && gh release create v$(node -p \"require('./package.json').version\") --generate-notes -R mohammadfarooqi/canlii-mcp",
-    "prepublishOnly": "npm run build"
+    "test": "npm run build && node --test dist/test.js"
   },
   "keywords": [
     "mcp",
@@ -38,16 +34,16 @@
     "court",
     "citator"
   ],
-  "author": "Mohammad Farooqi",
+  "author": "Optillium Inc.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohammadfarooqi/canlii-mcp.git"
+    "url": "git+https://github.com/senkushal/canadian-legal-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/mohammadfarooqi/canlii-mcp/issues"
+    "url": "https://github.com/senkushal/canadian-legal-mcp/issues"
   },
-  "homepage": "https://github.com/mohammadfarooqi/canlii-mcp#readme",
+  "homepage": "https://github.com/senkushal/canadian-legal-mcp#readme",
   "engines": {
     "node": ">=18"
   },
@@ -58,5 +54,6 @@
   "devDependencies": {
     "@types/node": "^24.0.12",
     "typescript": "^5.8.3"
-  }
+  },
+  "private": true
 }
